@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import EqSolver.EqSolver;
-//hey hey
-public class Test1 {
+
+public class test2 {
 
 	@Test
 	public void test() {
