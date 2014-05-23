@@ -13,6 +13,7 @@ public class test2 {
 		EqSolver solver = new EqSolver();
 		double result = solver.solve(1,-2,1);
 		//System.out.println(result);
+	
 		assertEquals((int)result, 1,0);
         
 	}
