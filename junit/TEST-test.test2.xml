@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="Sina-PC" name="test.test2" tests="1" time="0.065" timestamp="2014-05-23T22:27:51">
+<testsuite errors="0" failures="1" hostname="Sina-PC" name="test.test2" tests="1" time="0.061" timestamp="2014-05-23T22:36:10">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.USERDOMAIN_ROAMINGPROFILE" value="Sina-PC" />
@@ -76,8 +76,8 @@
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
-    <property name="java.class.path" value="C:\Users\Sina\Documents\eclipse-charand-workspace\SE\bin;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.junit_4.10.0.v4_10_0_v20120426-0900\junit.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-launcher.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.test2 filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junit\TEST-test.test2.xml crashfile=C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junitvmwatcher799649188137833527.properties propsfile=C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junit2904189328092853248.properties" />
+    <property name="java.class.path" value="C:\Users\Sina\Documents\eclipse-charand-workspace\SE\bin;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.junit_4.10.0.v4_10_0_v20120426-0900\junit.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-launcher.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit.jar;C:\Users\Sina\Documents\CE Materials\Software Engineering\eclipse\eclipse\eclipse\plugins\org.apache.ant_1.8.3.v20120321-1730\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.test2 filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junit\TEST-test.test2.xml crashfile=C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junitvmwatcher5144622910900907822.properties propsfile=C:\Users\Sina\Documents\eclipse-charand-workspace\SE\junit8354712812366276535.properties" />
     <property name="env.DMS_DOMAINS" value="C:\Program Files (x86)\SemanticDesigns\DMS\Domains" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="env.LOGONSERVER" value="\\SINA-PC" />
@@ -119,30 +119,10 @@
     <property name="ant.project.invoked-targets" value="build,test2" />
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
-  <testcase classname="test.test2" name="initializationError" time="0.006">
-    <error message="org/hamcrest/SelfDescribing" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-Caused by: java.lang.ClassNotFoundException: org.hamcrest.SelfDescribing
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-</error>
+  <testcase classname="test.test2" name="test" time="0.006">
+    <failure message="expected:&lt;-1.0&gt; but was:&lt;1.0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;-1.0&gt; but was:&lt;1.0&gt;
+	at test.test2.test(test2.java:17)
+</failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
